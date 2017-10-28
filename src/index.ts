@@ -39,11 +39,11 @@ Box.prototype = THREE.Mesh.prototype
 console.log(THREE.Mesh.prototype)
 initLights(scene)
 const boxes = [],
-	gridCount = 10
+	gridCount = 20
 for(let i = 0;i < gridCount;i++){
 	const ran = (n) => Math.floor(Math.random() * n) 
 	const size = 10,
-				base = -size * gridCount / 1.5
+				base = -size * gridCount / 1.9
 	let y = base + size * (i+1),
 			z = -150
 	for(let j = 0;j < gridCount;j++){
